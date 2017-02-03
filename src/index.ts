@@ -1,0 +1,1 @@
+export  { SlipperModule } from './slipper.module';
