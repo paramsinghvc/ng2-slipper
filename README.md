@@ -1,6 +1,8 @@
 # ng2-slipper
 An Angular 2 Component for Drag and Drop Sortable List
 
+![ng2-slipper demo](http://g.recordit.co/praOE4lvNF.gif "ng2-slipper demo")
+
 # Installation
 
 `npm i ng2-slipper -S`
