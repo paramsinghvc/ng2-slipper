@@ -1,30 +1,47 @@
 {
-  "name": "ng2-slipper",
-  "version": "1.0.5",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "cleanup": "rimraf dist/bundles dist/src dist/index.d.ts dist/index.js dist/index.js.map dist/LICENCE dist/README.md",
-    "bundling": "rollup -c",
-    "minify": "uglifyjs dist/bundles/slipper.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/slipper.umd.min.js",
-    "build": "npm run cleanup && ngc && npm run bundling && npm run minify",
-    "pub": "npm version patch && npm publish"
-  },
-  "author": "Param Singh",
-  "license": "ISC",
-  "dependencies": {
-    "@angular/common": "^2.4.5",
-    "@angular/core": "^2.4.5",
-    "reflect-metadata": "^0.1.9",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.7.6"
-  },
-  "devDependencies": {
-    "@angular/compiler": "^2.4.5",
-    "@angular/compiler-cli": "^2.4.5",
-    "rimraf": "^2.5.4",
-    "rollup": "^0.41.4",
-    "typescript": "^2.1.5",
-    "uglify-js": "^2.7.5"
-  }
+    "name": "ng2-slipper",
+    "version": "1.0.5",
+    "description": "An Angular 2 Component for Drag and Drop Sortable List",
+    "main": "index.js",
+    "scripts": {
+        "cleanup": "rimraf dist/bundles dist/src dist/index.d.ts dist/index.js dist/index.js.map dist/LICENCE dist/README.md",
+        "bundling": "rollup -c",
+        "minify": "uglifyjs dist/bundles/slipper.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/slipper.umd.min.js",
+        "build": "npm run cleanup && ngc && npm run bundling && npm run minify",
+        "pub": "npm version patch && npm publish"
+    },
+    "author": "Param Singh",
+    "license": "MIT",
+    "keywords": [
+        "angular2",
+        "dragdrop",
+        "sortable",
+        "list",
+        "html5",
+        "ng2",
+        "component",
+        "drag",
+        "jquery",
+        "angular",
+        "javascript"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/paramsinghvc/ng2-slipper"
+    },
+    "dependencies": {
+        "@angular/common": "^2.4.5",
+        "@angular/core": "^2.4.5",
+        "reflect-metadata": "^0.1.9",
+        "rxjs": "^5.1.0",
+        "zone.js": "^0.7.6"
+    },
+    "devDependencies": {
+        "@angular/compiler": "^2.4.5",
+        "@angular/compiler-cli": "^2.4.5",
+        "rimraf": "^2.5.4",
+        "rollup": "^0.41.4",
+        "typescript": "^2.1.5",
+        "uglify-js": "^2.7.5"
+    }
 }
