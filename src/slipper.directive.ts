@@ -33,13 +33,13 @@ export class SlipperDirective {
 		let list = this.el.nativeElement;
 		let itemsEl = list.querySelectorAll("[slipperitem]");
 		let self = this;
-		let s;
+		let s: any;
 
 		for (let item of itemsEl) {
 
 			if (!item.hasAttribute('eventHandlerAttached')) {
 
-				item.addEventListener('dragstart', function(e) {
+				item.addEventListener('dragstart', function(e: any) {
 					e.stopPropagation();
 					s = this;
 					s.style.border = '3px solid';
@@ -54,7 +54,7 @@ export class SlipperDirective {
 
 				});
 
-				item.addEventListener('dragenter', function(e) {
+				item.addEventListener('dragenter', function(e: any) {
 					if (s === this) return;
 					// s.opacity = 0;
 
@@ -66,7 +66,7 @@ export class SlipperDirective {
 
 				});
 
-				item.addEventListener('dragend', function(e) {
+				item.addEventListener('dragend', function(e: any) {
 					// this.style.opacity = 1;
 					s.style.border = 'none';
 					let finalIndex = self.getNodeIndex(this.parentNode, this);
